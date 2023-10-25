@@ -1,0 +1,17 @@
+{
+  "name": "logo",
+  "version": "1.0.0",
+  "description": "web-impromptu logo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "author": "web-impromptu",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.157.0"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}
