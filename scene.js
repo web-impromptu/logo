@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { lightColor } from "./materials";
 
 const canvas = document.getElementById("logo-canvas");
 
@@ -6,8 +7,7 @@ export const renderer = new THREE.WebGLRenderer({
   canvas,
 });
 
-THREE.ColorManagement.enabled = false;
-renderer.setClearColor(0xffffee);
+renderer.setClearColor(lightColor);
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(50, undefined, .01, 10);
