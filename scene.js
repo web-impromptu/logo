@@ -7,7 +7,7 @@ export const renderer = new THREE.WebGLRenderer({
 });
 
 THREE.ColorManagement.enabled = false;
-renderer.setClearColor(0x20111f);
+renderer.setClearColor(0xffffee);
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(50, undefined, .01, 10);
