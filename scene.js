@@ -17,11 +17,13 @@ export const render = () => {
   renderer.render(scene, camera);
 };
 
+const pixelSize = 4;
+
 const resize = () => {
   const width = canvas.clientWidth;
   const height = canvas.clientHeight;
   renderer.setSize(width, height, false);
-  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setPixelRatio(window.devicePixelRatio / pixelSize);
 
   const aspect = width / height;
   camera.aspect = aspect;
