@@ -10,8 +10,8 @@ export const renderer = new THREE.WebGLRenderer({
 renderer.setClearColor(lightColor);
 
 export const scene = new THREE.Scene();
-export const camera = new THREE.PerspectiveCamera(50, undefined, .01, 10);
-camera.position.z = 5;
+export const camera = new THREE.PerspectiveCamera(40, undefined, .01, 10);
+camera.position.z = 1;
 
 export const render = () => {
   renderer.render(scene, camera);
